@@ -1,0 +1,70 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://fonts/pixeled.tres" type="DynamicFont" id=1]
+[ext_resource path="res://scripts/text.gd" type="Script" id=2]
+[ext_resource path="res://audio/voice.wav" type="AudioStream" id=3]
+
+[sub_resource type="GDScript" id=1]
+
+resource_name = "dialogue"
+script/source = "extends Node
+
+var lines = [\"IT BEGINS\", \"IT CONTINUES\", \"IT ENDS\"]
+
+func _ready():
+	# Called every time the node is added to the scene.
+	# Initialization here
+	pass
+
+#func _process(delta):
+#	# Called every frame. Delta is time since last frame.
+#	# Update game logic here.
+#	pass
+"
+_sections_unfolded = [ "Resource" ]
+
+[node name="Label" type="Label"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 2.0
+margin_top = 443.0
+margin_right = 482.0
+margin_bottom = 511.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 1 )
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+script = ExtResource( 2 )
+_sections_unfolded = [ "Anchor", "Focus", "Grow Direction", "Hint", "Margin", "Mouse", "Rect", "Size Flags", "Theme", "custom_colors", "custom_fonts", "custom_styles" ]
+
+[node name="Timer" type="Timer" parent="." index="0"]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = false
+autostart = true
+
+[node name="dialogue1" type="Node" parent="." index="1"]
+
+script = SubResource( 1 )
+
+[node name="voice" type="AudioStreamPlayer" parent="." index="2"]
+
+stream = ExtResource( 3 )
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "voice"
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+
+

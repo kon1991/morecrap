@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/knife.wav-44d3088b9acaf0d2e7e8966fb68ba20c.sample"
+
+[deps]
+
+source_file="res://audio/knife.wav"
+source_md5="8e9fe9c800d06d5a8b6f456e520afb54"
+
+dest_files=[ "res://.import/knife.wav-44d3088b9acaf0d2e7e8966fb68ba20c.sample" ]
+dest_md5="ba018ef3705a3b689679495b25d0972a"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

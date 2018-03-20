@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/whiteout.wav-51f4149b1c8140733a8a8476eee95433.sample"
+
+[deps]
+
+source_file="res://audio/whiteout.wav"
+source_md5="3d151f3c67c8188279ae1ee0d6aa963c"
+
+dest_files=[ "res://.import/whiteout.wav-51f4149b1c8140733a8a8476eee95433.sample" ]
+dest_md5="bcbb432043fa851d0f6adc4cb53dd055"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,12 @@
+[gd_resource type="BitmapFont" format=2]
+
+[resource]
+
+textures = [  ]
+chars = PoolIntArray(  )
+kernings = PoolIntArray(  )
+height = 5.0
+ascent = 2.0
+distance_field = false
+_sections_unfolded = [ "Resource" ]
+
